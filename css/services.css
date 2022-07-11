@@ -1,51 +1,67 @@
+:root {
+  --color-first: #65587f;
+  --color-second: #f18867;
+  --color-third: #e85f99;
+  --color-forth: #50bda1;
+  --block-width: 300px;
+  --block-height: 270px;
+  --border-width: 0.625rem;
+  --border-radius-outer: 8px;
+  --border-radius-inner: calc(var(--border-radius-outer) / 2);
+  --font-plain: "IBM Plex Sans", sans-serif;
+  --font-special: "Fredoka One", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
 @font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 200;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf)
-      format("truetype");
-  }
-  @font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 300;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf)
-      format("truetype");
-  }
-  @font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf)
-      format("truetype");
-  }
-  @font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 600;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf)
-      format("truetype");
-  }
-  @font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf)
-      format("truetype");
-  }
-  @font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 900;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf)
-      format("truetype");
-  }
-  body {
-    background: #dce1df;
-    color: #4f585e;
-    font-family: "Source Sans Pro", sans-serif;
-    text-rendering: optimizeLegibility;
-  }
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf)
+    format("truetype");
+}
+body {
+  background: #dce1df;
+  color: #4f585e;
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+}
 
 /* Navbar and Section */
 .container {
@@ -186,4 +202,26 @@
 
 .nav-container input[type="checkbox"]:checked ~ .logo {
   display: none;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.image-container > img {
+  width: 400px;
+  height: 500px;
+  border: 10px solid rgb(222, 49, 49);
+  border-radius: 10px;
+}
+p {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  vertical-align: middle;
 }
