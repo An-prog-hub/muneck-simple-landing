@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muneck Design / Prototype</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="/index.html"><img src="images/muneck.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="/index.html"> Home </a></li>
+          <li><a href="/team.html"> Team </a></li>
+          <li><a href="/services.html"> Services </a></li>
+          <li><a href="/contact.html"> Contact </a></li>
+          <li>
+            <a href="#"><span class="themeSwitch"></span></a>
+          </li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>
+            Neck Pain Relief<br />
+            with <b><span>Music</span></b>
+          </h2>
+          <p>
+            Our product focuses on reducing neck pain in a fun and engaging
+            manner. <br />
+          </p>
+          <a href="https://muneck-tom.web.app/" target="_blank">Explore More</a>
+        </div>
+        <div class="imgbox">
+          <img src="images/img1.png" class="floatingImg" />
+        </div>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="https://facebook.com"
+            ><i class="fa fa-facebook-f fa-3x" style="color: white"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twiiter.com"
+            ><i class="fa fa-twitter fa-3x" style="color: white"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/muneck.io/"
+            ><i class="fa fa-instagram fa-3x" style="color: white"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="muneck"
+      data-description="Support me on Buy me a coffee!"
+      data-message=""
+      data-color="#FEE300"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
+
+    <script type="text/javascript">
+      let themeSwitch = document.querySelector(".themeSwitch");
+      let body = document.querySelector("body");
+      themeSwitch.onclick = function () {
+        themeSwitch.classList.toggle("active");
+        body.classList.toggle("dark");
+      };
+
+      function imgSlider(anything) {
+        document.querySelector(".floatingImg").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
